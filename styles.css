@@ -1,0 +1,86 @@
+/*This is a comment*/
+/*	background color:rgb(128, 128, 256)
+	Dark-Gray		:rgb(  8,   8,  24)
+	Text-blue		:rgb(128, 128, 256)
+	SimSun			=Pixely
+	Lucida Console	=Monospace
+	Georgia			=Serif
+	Comic Sans MS	=Cursive
+*/
+/*body*/
+body{
+	background-color:rgb( 24,  56,  96);
+	color			:rgb(256, 256, 256);
+	margin			:1em;
+	text-align		:right;
+	font-family		:"SimSun", "Lucida Console", monospace;
+	font-size		:1.15em;
+}
+p{
+	background-color:rgb(256, 256, 232);
+	color			:rgb(  0,   0,   0);
+	text-align		:left;
+	font-family		:monospace;
+	font-size		:1.25em;
+	font-weight		:bold;
+}
+	/*links*/
+	a{
+		background-color:rgb(  0,   0,   0);
+		color			:rgb(128, 128, 256);
+		font-weight		:bold;
+		font-family		:monospace;
+	}
+	a:visited{
+		background-color:rgb( 256, 256, 256);
+		color			:rgb(   0,   0, 128);
+		font-weight		:bold;
+		font-family		:monospace;
+	}
+/*Lists*/
+* .listballs, .listmain{
+	font-family		:arial;
+}
+/*list header*/
+.listballs{
+	background-color:rgb(  8,   8,  24);
+	color			:rgb(128, 128, 256);
+	text-align		:center;
+	font-weight		:bold;
+}
+/*actual list*/
+.listmain{
+	background-color:rgb(128, 128, 256);
+	color			:rgb(  8,   8,  24);
+	text-align		:left;
+}
+/*Headers*/
+	* h1, h2, h3, h4, h5, h6, .hblock	{
+		background-color:rgb(  8,   8,  24);
+		color			:rgb(128, 128, 256);
+		text-align		:center;
+		font-weight		:bold;
+		font-family		:"Lucida Console", monospace;
+	}
+	h1{
+		color: rgb(128, 128, 256);
+	}
+	h2{
+		color: rgb(128, 128, 224);
+	}
+	h3{
+		color: rgb(128, 128, 200);
+	}
+	h4{
+		color: rgb(128, 128, 176);
+	}
+	h5{
+		color: rgb(128, 128, 152);
+	}
+	h6{
+		color: rgb(128, 128, 128);
+	}
+	.hblock{
+		color:rgb(  0,   0,   0);
+		width:100%;
+	}
