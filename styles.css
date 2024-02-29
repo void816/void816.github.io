@@ -2,7 +2,7 @@
 /*	background color:rgb(128, 128, 256)
 	Dark-Gray		:rgb(  8,   8,  24)
 	Text-blue		:rgb(128, 128, 256)
-	SimSun			=Pixely
+	SimSun			=~Pixely~ Serif
 	Lucida Console	=Monospace
 	Georgia			=Serif
 	Comic Sans MS	=Cursive
@@ -11,51 +11,102 @@
 body{
 	background-color:rgb( 24,  56,  96);
 	color			:rgb(256, 256, 256);
-	margin			:1em;
 	text-align		:right;
-	font-family		:"SimSun", "Lucida Console", monospace;
-	font-size		:1.15em;
+	font-family		:"NSimSun", "Lucida Console","Courier New", monospace;
+	font-size		:16px;
+	margin-top		:0vw;
+	margin-bottom	:1vw;
+}
+* p, .l, .r, .m, .wblock{
+	background-color:rgb(256, 256, 232);
+	color			:rgb(  0,   0,   0);
+	text-align		:center;
+	font-family		:"Courier New", monospace, arial;
+	font-size		:18px;
+	font-weight		:bold;
+	margin-top		:0vw;
+	margin-bottom	:1vw;
 }
 p{
 	background-color:rgb(256, 256, 232);
-	color			:rgb(  0,   0,   0);
+	font-family		:"Lucida Console";
 	text-align		:left;
-	font-family		:monospace;
-	font-size		:1.25em;
-	font-weight		:bold;
 }
+.l{
+	background-color:rgb(256, 128, 128);
+	text-align		:left;
+	margin			:0vw;
+	padding-top		:0vw;
+	padding-bottom	:0vw;
+	padding-left	:0vw;
+	padding-right	:0vw;
+}
+.r{
+	background-color:rgb(128, 128, 256);
+	text-align		:right;
+	margin			:0vw;
+	padding-left	:0vw;
+	padding-right	:0vw;
+}
+.m{
+	text-align		:left;
+	font-family		:"Courier New", monospace;
+}
+.wblock{
+	background-color:rgb(256,200,256);
+}
+* img, .avatar, .jerry, .nerd{
+	float	:left;
+	padding	:0vw;
+	margin	:0vw;
+	height	:64px;
+	border	:8px solid rgb(  8,   8,  24);
+}
+img{
+	/*width	:10vw;*/
+}
+.nerd{
+	float			:left;
+	margin-top		:8px;
+	margin-bottom	:8px;
+	margin-left		:0vw;
+	margin-right	:1vw;
+}
+.jerry{
+	float			:right;
+	margin-top		:8px;
+	margin-bottom	:8px;
+	margin-left		:1vw;
+	margin-right	:0vw;
+}
+
 	/*links*/
 	a{
 		background-color:rgb(  0,   0,   0);
-		color			:rgb(128, 128, 256);
+		color			:rgb(  0,   0, 256);
+		font-variant	:underline;
 		font-weight		:bold;
-		font-family		:monospace;
 	}
 	a:visited{
 		background-color:rgb( 256, 256, 256);
 		color			:rgb(   0,   0, 128);
+		font-variant	:underline;
 		font-weight		:bold;
-		font-family		:monospace;
 	}
-/*Lists*/
-* .listballs, .listmain{
-	font-family		:arial;
-}
-/*list header*/
+/*listballs is the List Header*/
 .listballs{
 	background-color:rgb(  8,   8,  24);
 	color			:rgb(128, 128, 256);
 	text-align		:center;
 	font-weight		:bold;
 }
-/*actual list*/
+/*listmain is for list entries*/
 .listmain{
 	background-color:rgb(128, 128, 256);
 	color			:rgb(  8,   8,  24);
-	text-align		:left;
 }
 /*Headers*/
-	* h1, h2, h3, h4, h5, h6, .hblock	{
+	* h1, h2, h3, h4, h5, h6, .hblock{
 		background-color:rgb(  8,   8,  24);
 		color			:rgb(128, 128, 256);
 		text-align		:center;
@@ -82,5 +133,11 @@ p{
 	}
 	.hblock{
 		color:rgb(  0,   0,   0);
-		width:100%;
+		margin-top		:0vw;
+		margin-bottom	:1vw;
+		border			:1vw solid rgb(128, 128, 256);
+		padding			:1vw;
 	}
+#index{
+	background-color:rgb(256,256,256);
+}
