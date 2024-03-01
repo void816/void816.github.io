@@ -14,8 +14,12 @@ body{
 	text-align		:right;
 	font-family		:"NSimSun", "Lucida Console","Courier New", monospace;
 	font-size		:16px;
-	margin-top		:0vw;
+	margin-top		:1vw;
 	margin-bottom	:1vw;
+	padding-top		:0vw;
+	padding-bottom	:0vw;
+	padding-left	:1vw;
+	padding-right	:1vw;
 }
 * p, .l, .r, .m, .wblock{
 	background-color:rgb(256, 256, 232);
@@ -36,46 +40,62 @@ p{
 	background-color:rgb(256, 128, 128);
 	text-align		:left;
 	margin			:0vw;
-	padding-top		:0vw;
-	padding-bottom	:0vw;
+	padding-top		:1vw;
+	padding-bottom	:1vw;
 	padding-left	:0vw;
 	padding-right	:0vw;
+	height			:80px;
 }
 .r{
 	background-color:rgb(128, 128, 256);
 	text-align		:right;
 	margin			:0vw;
+	padding-top		:1vw;
+	padding-bottom	:1vw;
 	padding-left	:0vw;
 	padding-right	:0vw;
+	height			:80px;
 }
 .m{
 	text-align		:left;
 	font-family		:"Courier New", monospace;
 }
-.wblock{
+* #index, #about, .wblock{
 	background-color:rgb(256,200,256);
+	padding-top		:0vw;
+	padding-bottom	:1vw;
+	margin-top		:1vw;
+	margin-bottom	:1vw;
+	margin-left		:2vw;
+	margin-right	:2vw;
 }
 * img, .avatar, .jerry, .nerd{
 	float	:left;
 	padding	:0vw;
 	margin	:0vw;
 	height	:64px;
-	border	:8px solid rgb(  8,   8,  24);
+	border	:8px solid rgb(  8,  8, 24);
 }
 img{
 	/*width	:10vw;*/
 }
+.avatar{
+	margin-top		:0px;
+	margin-bottom	:0vw;
+	margin-left		:0vw;
+	margin-right	:1vw;
+}
 .nerd{
 	float			:left;
-	margin-top		:8px;
-	margin-bottom	:8px;
+	margin-top		:0px;
+	margin-bottom	:1vw;
 	margin-left		:0vw;
 	margin-right	:1vw;
 }
 .jerry{
 	float			:right;
-	margin-top		:8px;
-	margin-bottom	:8px;
+	margin-top		:0px;
+	margin-bottom	:1vw;
 	margin-left		:1vw;
 	margin-right	:0vw;
 }
@@ -93,18 +113,6 @@ img{
 		font-variant	:underline;
 		font-weight		:bold;
 	}
-/*listballs is the List Header*/
-.listballs{
-	background-color:rgb(  8,   8,  24);
-	color			:rgb(128, 128, 256);
-	text-align		:center;
-	font-weight		:bold;
-}
-/*listmain is for list entries*/
-.listmain{
-	background-color:rgb(128, 128, 256);
-	color			:rgb(  8,   8,  24);
-}
 /*Headers*/
 	* h1, h2, h3, h4, h5, h6, .hblock{
 		background-color:rgb(  8,   8,  24);
@@ -113,7 +121,7 @@ img{
 		font-weight		:bold;
 		font-family		:"Lucida Console", monospace;
 	}
-	h1{
+	/*h1{
 		color: rgb(128, 128, 256);
 	}
 	h2{
@@ -130,7 +138,7 @@ img{
 	}
 	h6{
 		color: rgb(128, 128, 128);
-	}
+	}*/
 	.hblock{
 		color:rgb(  0,   0,   0);
 		margin-top		:0vw;
@@ -138,6 +146,3 @@ img{
 		border			:1vw solid rgb(128, 128, 256);
 		padding			:1vw;
 	}
-#index{
-	background-color:rgb(256,256,256);
-}
