@@ -70,34 +70,24 @@ p{
 	margin-right	:2vw;
 }
 * img, .avatar, .jerry, .nerd{
-	float	:left;
-	padding	:0vw;
-	margin	:0vw;
-	height	:64px;
-	border	:8px solid rgb(  8,  8, 24);
-}
-img{
-	/*width	:10vw;*/
-}
-.avatar{
+	float			:left;
+	padding			:0vw;
 	margin-top		:0px;
 	margin-bottom	:0vw;
-	margin-left		:0vw;
+	margin-left		:1vw;
 	margin-right	:1vw;
+	height			:64px;
+	border			:8px solid rgb(  8,  8, 24);
+}
+img{
+}
+.avatar{
 }
 .nerd{
-	float			:left;
-	margin-top		:0px;
-	margin-bottom	:1vw;
-	margin-left		:0vw;
-	margin-right	:1vw;
+	float:left;
 }
 .jerry{
-	float			:right;
-	margin-top		:0px;
-	margin-bottom	:1vw;
-	margin-left		:1vw;
-	margin-right	:0vw;
+	float:right;
 }
 
 	/*links*/
