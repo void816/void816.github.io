@@ -1,0 +1,133 @@
+/*This is a comment*/
+/*	background color:rgb(128, 128, 256)
+	Dark-Gray		:rgb(  8,   8,  24)
+	Text-blue		:rgb(128, 128, 256)
+	SimSun			=~Pixely~ Serif
+	Lucida Console	=Monospace
+	Georgia			=Serif
+	Comic Sans MS	=Cursive
+*/
+#art{
+	text-align		:left;
+	font-family		:"Courier New", monospace;
+	margin-top		:1vw;
+	margin-bottom	:1vw;
+}
+p{
+	text-align		:left;
+	font-weight		:bold;
+}
+.textboxes{
+	font-family		:"Courier New", monospace;
+	margin			:0vw;
+	padding-top		:1vw;
+	padding-bottom	:1vw;
+	padding-left	:0vw;
+	padding-right	:0vw;
+	height			:80px;
+	overflow		:hidden;
+}
+.l{
+	background-color:rgb(256, 128, 128);
+	text-align		:left;
+}
+.r{
+	background-color:rgb(128, 128, 256);
+	text-align		:right;
+}
+.m{
+	text-align		:left;
+	font-family		:"Courier New", monospace;
+}
+* #index, #about, .wblock{
+	background-color:rgb(256,200,256);
+	padding-top		:0vw;
+	padding-bottom	:1vw;
+	margin-top		:1vw;
+	margin-bottom	:1vw;
+	margin-left		:2vw;
+	margin-right	:2vw;
+}
+* img, .avatar, .jerry, .nerd{
+	float			:left;
+	padding			:0vw;
+	margin-top		:0vw;
+	margin-bottom	:1vw;
+	margin-left		:1vw;
+	margin-right	:1vw;
+	height			:64px;
+	border			:8px solid rgb(  8,  8, 24);
+}
+img{
+	padding			:0vw;
+	margin-top		:1vw;
+	margin-bottom	:1vw;
+	margin-left		:1vw;
+	margin-right	:1vw;
+	height			:16vw;
+	border			:8px solid rgb(  8,  8, 24);
+}
+.avatar{
+}
+.nerd{
+	float:left;
+}
+.jerry{
+	float:right;
+}
+
+	/*links*/
+	a{
+		background-color:rgb(  0,   0,   0);
+		color			:rgb(  0,   0, 256);
+		font-variant	:underline;
+		font-weight		:bold;
+	}
+	a:visited{
+		background-color:rgb( 256, 256, 256);
+		color			:rgb(   0,   0, 128);
+		font-variant	:underline;
+		font-weight		:bold;
+	}
+/*Headers*/
+	* h1, h2, h3, h4, h5, h6, .hblock{
+		background-color:rgb(  8,   8,  24);
+		color			:rgb(128, 128, 256);
+		text-align		:center;
+		font-size:75px;
+		font-weight		:bold;
+		font-family		:"Lucida Console", monospace;
+	}
+	h1{
+		font-size		:45px;
+		/*color: rgb(128, 128, 256);/**/
+	}
+	h2{
+		font-size		:40px;
+		/*color: rgb(128, 128, 224);*/
+	}
+	h3{
+		font-size		:35px;
+		/*color: rgb(128, 128, 200);*/
+	}
+	h4{
+		font-size		:30px;
+		/*color: rgb(128, 128, 176);*/
+	}
+	h5{
+		font-size		:25px;
+		/*color: rgb(128, 128, 152);*/
+	}
+	h6{
+		font-size		:20px;
+		/*color: rgb(128, 128, 128);*/
+	}
+	.hblock{
+		color	:rgb(  0,   0,   0);
+		margin		:0px;
+		border		:1vw solid rgb(128, 128, 256);
+		padding-top		:0px;
+		padding-bottom	:0px;
+		padding-left	:0px;
+		padding-right	:0px;
+	}
