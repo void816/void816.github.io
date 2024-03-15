@@ -16,7 +16,7 @@
 		text-align		:right;
 		font-family		:"SimSun", "Lucida Console", monospace;
 		font-size		:16px;
-		font-weight		:none;
+		font-weight		:normal;
 	position		:fixed;
 	top				: 0px;
 	right			: 0px;
@@ -49,11 +49,13 @@ p{
 	text-align		:left;
 	font-family		:"Lucida Console", monospace;
 	font-size		:18px;
-	font-weight		:bold;
-	padding			:0px;
+	font-weight		:none;
+	border			:0px none rgb(0,0,0);
+	margin			:0px;
 }
 	.textboxes{
 		font-family		:"Courier New", monospace;
+		font-weight		:bold;
 		margin			:0vw;
 		padding-top		:1vw;
 		padding-bottom	:1vw;
@@ -63,16 +65,18 @@ p{
 		overflow		:hidden;
 	}
 	.l{
-		background-color:rgb(256, 128, 128);
 		text-align		:left;
 	}
 	.r{
-		background-color:rgb(128, 128, 256);
-		text-align		:right;
+		text-align	:right;
 	}
-	.m{
-		text-align		:left;
-		font-family		:"Courier New", monospace;
+	.red{
+		background-color:rgb(256, 128, 128);
+		color			:rgb(  0,   0,   0);
+	}
+	.blue{
+		background-color:rgb(128, 128, 256);
+		color			:rgb(  0,   0,   0);
 	}
 	* #index, #about, .wblock{
 		background-color:rgb(256,200,256);
@@ -83,24 +87,45 @@ p{
 		margin-left		:2vw;
 		margin-right	:2vw;
 	}
+	.smallp{
+		width	:50vw;
+		padding	: 0px;
+		margin	:auto;
+		margin-top		:1vw;
+		margin-bottom	:1vw;
+		border	:8px solid rgb(  8,  8, 24);
+	}
 /*links*/
 a{
 	background-color:rgb(  0,  0,  0);
 	color			:rgb(  0,  0,256);
-	font-weight		:bold;
 	font-family		:monospace;
+	font-weight		:normal;
 }
 a:visited{
 	background-color:rgb(256,256,256);
-	color			:rgb(  0,  0,128);/*+64*/
-	font-weight		:bold;
-	font-family		:monospace;
+	color			:rgb(  0,  0,128);
+}
+a:hover, a:active, a:focus {
+	border	:0px;
+}
+.ft a:hover, a:active, a:focus {
+	border-top		:8px solid rgb(128,128,256);
+	border-bottom	:8px solid rgb(128,128,256);
+	border-left		:0px;
+	border-right	:0px;
+}
+li a:hover, a:active, a:focus{
+	border-top		:0px;
+	border-bottom	:0px;
+	border-left		:0px solid rgb(0,0,0);
+	border-right	:8px solid rgb(0,0,0);
 }
 /*Tables & Lists*/
 	table{
+		margin			:0px;
 		margin-left		:auto;
 		margin-right	:auto;
-		width			:75vw;
 	}
 	th{
 		background-color:rgb(  8,   8,  24);
@@ -111,6 +136,7 @@ a:visited{
 			font-size	:18px;
 		width			:50vw;
 		padding			:4px;
+		margin			:0px;
 		margin-left		:auto;
 		margin-right	:auto;
 	}
@@ -122,22 +148,37 @@ a:visited{
 			font-size	:16px;
 		width			:50vw;
 		padding			:8px;
+		margin			:0px;
 		margin-left		:auto;
 		margin-right	:auto;
 	}
-	li{
-		background-color:rgb(128,128,256);
-		color			:rgb(  8,  8, 24);
+	ol, ul{
+		background-color:rgb(  8,  8, 24);
+		color			:rgb(256,200,256);
 			text-align		:center;
 			font-family		:"Lucida Console", monospace;
 			font-size		:18px;
-		width			:75vw;
+		width			:25vw;
 		padding			:0px;
+		margin-top		:16px;
+		margin-bottom	:16px;
+		margin-left		:px;
+	}
+	li{
+		background-color:rgb(256,256,232);
+		color			:rgb(  0,  0,  0);
+			text-align		:left;
+			font-family		:"Lucida Console", monospace;
+			font-size		:18px;
+		width			:25vw;
+		padding			:8px;
+		margin			:0px;
 		margin-left		:auto;
 		margin-right	:auto;
 	}
+
 /*Headers*/
-	* h1, h2, h3, h4, h5, h6, .hblock	{
+	* h1, h2, h3, h4, h5, h6, .hblock, .h	{
 		background-color:rgb(  8,  8, 24);
 		color			:rgb(128,128,256);
 		text-align		:center;
@@ -147,10 +188,18 @@ a:visited{
 		padding-bottom	:16px;
 		padding-left	:0px;
 		padding-right	:0px;
+		margin-top		:0px;
+		margin-bottom	:0px;
 		margin-left		:auto;
 		margin-right	:auto;
-		border		:0px none rgb(128,128,256);
+		border		:0px none rgb(0,0,0);
 	}
+	h1{font-size:32px; margin-top:32px; margin-bottom:32px;}
+	h2{font-size:28px;}
+	h3{font-size:24px;}
+	h4{font-size:22px;}
+	h5{font-size:20px;}
+	h6{font-size:18px;}
 	.hblock{
 		padding		:0px;
 		border		:16px solid rgb(128,128,256);
@@ -170,12 +219,14 @@ a:visited{
 }
 	img{
 		padding			:0vw;
-		margin-top		:1vw;
+		margin			:0px;
+		/*margin-top		:1vw;
 		margin-bottom	:1vw;
 		margin-left		:1vw;
-		margin-right	:1vw;
+		margin-right	:1vw;*/
 		height			:10vw;
-		border			:8px solid rgb(  8,  8, 24);
+		border			:16px solid rgb(  0,  0,  0);
+		/*border			:8px solid rgb(  8,  8, 24);*/
 	}
 	.avatar{
 		float:left;
@@ -186,3 +237,34 @@ a:visited{
 	.jerry{
 		float:right;
 	}
+
+#rock{
+	background-color:rgb(256,256,256);
+	color			:rgb(128,  0,  0);
+	text-align		:left;
+	font-family		:"Consolas";
+	font-size		:18px;
+	font-weight		:bold;
+	margin-left		:auto;
+	margin-right	:auto;
+}
+#metal{
+	background-color:rgb(  0,  0,  0);
+	color			:rgb(256,256,256);
+	text-align		:left;
+	font-family		:"Impact";
+	font-size		:18px;
+	font-weight		:none;
+	margin-left		:auto;
+	margin-right	:auto;
+}
+#tracker{
+	background-color:rgb(  0,  0, 32);
+	color			:rgb(156,156,156);
+	text-align		:left;
+	font-family		:"Lucida Console", monospace;
+	font-size		:18px;
+	font-weight		:bold;
+	margin-left		:auto;
+	margin-right	:auto;
+}
