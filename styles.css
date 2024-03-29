@@ -1,8 +1,9 @@
 /*This is a comment*/
-/*	background color:rgb(128, 128, 256)
-	Dark-Gray		:rgb(  8,   8,  24)
-	Text-blue		:rgb(128, 128, 256)
-	SimSun			=Pixely
+/*	background color	:rgb(128,128,256)
+	Dark-Gray			:rgb(  8,  8, 24)
+	wblock/list color	:rgb(256,200,200)
+	Text-blue			:rgb(128,128,256)
+	SimSun/NSimSun	=Pixely
 	Lucida Console	=Monospace
 	Georgia			=Serif
 	Comic Sans MS	=Cursive
@@ -31,41 +32,58 @@
 		margin-right	:auto;
 	/*width			:100vw;*/
 }
-/*body*/
+
 body{
 	background-color:rgb( 24,  56,  96);
 	color			:rgb(256, 256, 256);
 	text-align		:center;
-	font-family		:"Courier New", "Lucida Console", monospace;
+	font-family		:"Lucida Console", monospace;
 	font-size		:16px;
-	padding			:1vw;
-	border			:1px none rgb(128,128,256);
-	margin			:4px;
+	padding			:10px;
+	border			: 1px none rgb(128,128,256);
+	margin			:10px;
 }
 
 p{
-	background-color:rgb(256, 256, 232);
+	background-color:rgb(256,256,256);
+	color			:rgb(  0,  0,  0);
+		text-align		:left;
+		font-family		:"Consolas New", monospace;
+		font-size		:18px;
+	padding			:10px;
+	border			:0px solid rgb(  8,  8, 24);
+	margin			:auto;
+	/*background-color:rgb(256, 256, 232);
 	color			:rgb(  0,   0,   0);
 	text-align		:left;
 	font-family		:"Lucida Console", monospace;
 	font-size		:18px;
 	font-weight		:none;
 	border			:0px none rgb(0,0,0);
-	margin			:0px;
+	margin			:0px;*/
+}
+.small{
+	width	:50vw;
+	margin-left	:auto;
+	margin-right:auto;
+}
+.frame{
+	border			:10px solid rgb(  8,  8, 24);
 }
 	.textboxes{
 		font-family		:"Courier New", monospace;
 		font-weight		:bold;
-		margin			:0vw;
+		margin			:0px;
 		padding-top		:1vw;
 		padding-bottom	:1vw;
 		padding-left	:0vw;
 		padding-right	:0vw;/*
 		height			:80px;*/
 		overflow		:hidden;
+		border			:0px none;
 	}
 	.l{
-		text-align		:left;
+		text-align	:left;
 	}
 	.r{
 		text-align	:right;
@@ -78,33 +96,35 @@ p{
 		background-color:rgb(128, 128, 256);
 		color			:rgb(  0,   0,   0);
 	}
-	* #index, #about, .wblock{
-		background-color:rgb(256,200,256);
-		padding-top		:0vw;
-		padding-bottom	:1vw;
-		margin-top		:1vw;
-		margin-bottom	:1vw;
-		margin-left		:2vw;
-		margin-right	:2vw;
+	.green{
+		background-color:rgb(128,256,128);
+		color			:rgb(  0,  0,  0);
 	}
-	.smallp{
-		width	:50vw;
-		padding	: 0px;
-		margin	:auto;
-		margin-top		:1vw;
-		margin-bottom	:1vw;
-		border	:8px solid rgb(  8,  8, 24);
+	.purple{
+		background-color:rgb(256, 64,256);
+		color			:rgb(  0,  0,  0);
 	}
+	.wblock{
+		background-color:rgb(256,200,200);
+	}
+	.book{
+		margin:20px;
+	}
+
 /*links*/
 a{
-	background-color:rgb(  0,  0,  0);
 	color			:rgb(  0,  0,256);
 	font-family		:monospace;
 	font-weight		:normal;
 }
 a:visited{
-	background-color:rgb(256,256,256);
-	color			:rgb(  0,  0,128);
+	color			:rgb(256,  0,256);
+}
+a[href^="http"]:not([href*="void816.github.io"]) {
+	color:rgb(256,128,128);
+}
+a[href^="http"]:not([href*="void816.github.io"]):visited {
+	color:rgb(256,  0,  0);
 }
 a:hover, a:active, a:focus {
 	border	:0px;
@@ -153,29 +173,47 @@ li a:hover, a:active, a:focus{
 		margin-right	:auto;
 	}
 	ol, ul{
-		background-color:rgb(  8,  8, 24);
-		color			:rgb(256,200,256);
+		background-color:rgb(256,200,200);
+				   color:rgb(  0,  0,  0);
 			text-align		:center;
 			font-family		:"Lucida Console", monospace;
 			font-size		:18px;
 		width			:25vw;
-		padding			:0px;
+		padding			: 0px;
+		padding-left	:10px;
+		padding-right	:10px;
 		margin-top		:16px;
 		margin-bottom	:16px;
-		margin-left		:px;
-	}
-	li{
-		background-color:rgb(256,256,232);
-		color			:rgb(  0,  0,  0);
-			text-align		:left;
-			font-family		:"Lucida Console", monospace;
-			font-size		:18px;
-		width			:25vw;
-		padding			:8px;
-		margin			:0px;
 		margin-left		:auto;
 		margin-right	:auto;
 	}
+	li{
+		background-color:rgb(256,256,256);
+				   color:rgb(  0,  0,  0);
+			text-align		:left;
+			font-family		:"Lucida Console", monospace;
+			font-size		:16px;
+		width			:20vw;
+		padding			: 5px;
+		margin-top		: 0px;
+		margin-bottom	: 0px;
+		margin-left		:auto;
+		margin-right	:auto;
+	}
+
+.musicli{
+	background-color:rgb(  8,  8, 24);
+			   color:rgb(256,256,256);
+			text-align		:center;
+			font-family		:"Lucida Console", monospace;
+			font-size		:18px;
+		width			:20vw;
+		padding			:10px;
+		margin-top		: 0px;
+		margin-bottom	: 0px;
+		margin-left		:auto;
+		margin-right	:auto;
+}
 
 /*Headers*/
 	* h1, h2, h3, h4, h5, h6, .hblock, .h	{
@@ -183,7 +221,7 @@ li a:hover, a:active, a:focus{
 		color			:rgb(128,128,256);
 		text-align		:center;
 		font-weight		:bold;
-		font-family		:"Lucida Console", monospace;
+		font-family		:"Georgia", "Lucida Console", monospace;
 		padding-top		:16px;
 		padding-bottom	:16px;
 		padding-left	:0px;
@@ -238,6 +276,12 @@ li a:hover, a:active, a:focus{
 		float:right;
 	}
 
+.mystic{
+	color:rgb(256,256,256);
+	font-weight:bold;
+	font-style:normal;
+}
+
 #rock{
 	background-color:rgb(256,256,256);
 	color			:rgb(128,  0,  0);
@@ -251,12 +295,7 @@ li a:hover, a:active, a:focus{
 #metal{
 	background-color:rgb(  0,  0,  0);
 	color			:rgb(256,256,256);
-	text-align		:left;
 	font-family		:"Impact";
-	font-size		:18px;
-	font-weight		:none;
-	margin-left		:auto;
-	margin-right	:auto;
 }
 #tracker{
 	background-color:rgb(  0,  0, 32);
