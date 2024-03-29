@@ -120,22 +120,19 @@ a{
 a:visited{
 	color			:rgb(256,  0,256);
 }
-a[href^="http"]:not([href*="void816.github.io"]) {
+a[href^="http"]:not([href*="void816.github.io"]) {/**/
 	color:rgb(256,128,128);
-}
-a[href^="http"]:not([href*="void816.github.io"]):visited {
-	color:rgb(256,  0,  0);
 }
 a:hover, a:active, a:focus {
 	border	:0px;
 }
-.ft a:hover, a:active, a:focus {
+.ft a:hover, a:active, a:focus { /*Fast-Travler effects*/
 	border-top		:8px solid rgb(128,128,256);
 	border-bottom	:8px solid rgb(128,128,256);
 	border-left		:0px;
 	border-right	:0px;
 }
-li a:hover, a:active, a:focus{
+li a:hover, a:active, a:focus{ /*bookshelf effect*/
 	border-top		:0px;
 	border-bottom	:0px;
 	border-left		:0px solid rgb(0,0,0);
