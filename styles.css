@@ -127,12 +127,15 @@ a[href^="http"]:not([href*="void816.github.io"]) {/**/
 a:hover, a:active, a:focus {
 	border	:0px;
 }
-.ft a:hover, a:active, a:focus { /*Fast-Travler effects*/
+
+/*
+.ft a:hover, a:active, a:focus { Fast-Travler effects
 	border-top		:8px solid rgb(128,128,256);
 	border-bottom	:8px solid rgb(128,128,256);
 	border-left		:0px;
 	border-right	:0px;
 }
+*/
 li a:hover, a:active, a:focus{ /*bookshelf effect*/
 	border-top		:0px;
 	border-bottom	:0px;
