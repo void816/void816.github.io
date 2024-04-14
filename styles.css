@@ -50,6 +50,7 @@ p{
 		text-align		:left;
 		font-family		:"Lucida Console", "Consolas New", monospace;
 		font-size		:18px;
+		font-weight		:none;
 	padding			:10px;
 	border			:0px solid rgb(  8,  8, 24);
 	margin			:auto;
